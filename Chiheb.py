@@ -4,6 +4,8 @@
 # boukhobza ahmed ramy
 # bendada firas walid
 # belkhir manel
+
+
 # 5) Ajouter colonne "Catégorie GC"
 def categ(gc):
           if gc > 55:
