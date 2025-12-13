@@ -31,18 +31,19 @@ df_filtered = df[df["Longueur"] > 10]
 print (df_filtered)
 
 # 4) Pourcentage moyen de GC (3 chiffres aprés virgule)
-moyenne_GC = df["Pourcentage_GC"].mean() 
-print("\nPourcentage moyen de GC:", round(moyenne_GC,3))
+moyenne_gc = df["Pourcentage_GC"].mean() 
+print("\nPourcentage moyen de GC :", round(moyenne_gc, 3))
 
 
 # 5) Ajouter colonne "Catégorie GC"
 def categ(gc):
-          if gc > 55:
+        if gc > 55:
             return "Riche"
-          elif 45 <= gc <= 55:
+        elif 45 <= gc <= 55:
             return "Moyen"
-          else:
+        else:
             return "Faible"
+                  
 df["Catégorie_GC"] = df["Pourcentage_GC"].apply(categ)
 print(df)
 
@@ -57,11 +58,11 @@ print(df)
 Longueur
 ecart_gc =
 df["Pourcentage_GC"].stp()
-ecart_longeur=
-df["Longeur"].stp()
+ecart_longueur=
+df["Longueur"].stp()
 print("\nÉcart-type%GC:",ecart_gc)
 print("Écart-typeLongueur:",
-      ecart_longueur
+      ecart_longueur)
 
       
 # 8) Sauvegarder en CSV 
