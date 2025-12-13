@@ -24,6 +24,14 @@ print(df)
 print("\nColonne Longueur :")
 print(df["Longueur"])
 
+# 3) Filter les séquences longueur > 10
+print ("\nSéquences avec longueur > 10 :") 
+df_filtered = df[df["Longueur"] > 10] 
+print (df_filtered)
+
+# 4) Pourcentage moyenne de GC (3 chiffres aprés virgule)
+moyenne_GC = df["Pourcentage_GC"].mean() 
+print("\nPourcentage moyenne de GC:",round(moyenne_GC,3))
 
 # 5) Ajouter colonne "Catégorie GC"
 def categ(gc):
