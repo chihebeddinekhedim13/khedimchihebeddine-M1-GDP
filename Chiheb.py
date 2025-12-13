@@ -44,3 +44,16 @@ def categ(gc):
 df["Ctégorie_GC"]=df["Pourcentage_GC"].apply(categ)
 print(df)
 
+
+ # 7) Ecart-type de % GC et
+longueur
+ecart_gc =
+df["Pourcentage_GC"].stp()
+ecart_longeur=
+df["Longeur"].stp()
+print("\nEcart-type%GC:",ecart_gc)
+print("Ecart-typeLongueur:",
+      ecart_longueur
+
+
+
