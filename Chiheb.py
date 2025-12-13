@@ -5,7 +5,7 @@
 # bendada firas walid
 # belkhir manel
 
-import pands as pd
+import pandas as pd
 # Données : Séquences ADN , Longueur , pourcentage de GC 
 data = {
           "Séquence": [
