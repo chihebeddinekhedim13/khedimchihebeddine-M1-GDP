@@ -55,8 +55,8 @@ print(df)
 
 
  # 7) Écart-type de % GC et Longueur
-ecart_gc= df["Pourcentage_GC"].stp()
-ecart_longueur=df["Longueur"].stp()
+ecart_gc= df["Pourcentage_GC"].std()
+ecart_longueur=df["Longueur"].std()
 print("\nÉcart-type%GC:",ecart_gc)
 print("Écart-typeLongueur:", ecart_longueur)
 
